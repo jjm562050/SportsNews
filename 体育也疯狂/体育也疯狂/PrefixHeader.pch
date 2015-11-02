@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  体育也疯狂
+//
+//  Created by MAC22 on 15/10/12.
+//  Copyright (c) 2015年 huiwenjiaoyu. All rights reserved.
+//
+
+#ifndef ______PrefixHeader_pch
+#define ______PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//刷新
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+#import "Mybutton.h"
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//网址
+#define kVideoUrl @"http://platform.sina.com.cn/sports_client/feed"
+#define kPictureUrl @"http://u.api.5usport.com/PHP_works/api/index.php"
+#define kNewsUrl @"http://u.api.5usport.com/PHP_works/api/index.php"
+
+#endif

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="picturecell" rowHeight="247" id="KGk-i7-Jjw" customClass="PictureTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fengkaung.png" translatesAutoresizingMaskIntoConstraints="NO" id="vf8-2z-9TA">
+                        <rect key="frame" x="12" y="18" width="296" height="182"/>
+                    </imageView>
+                    <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceV-Zk-xC6">
+                        <rect key="frame" x="12" y="159" width="296" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="amE-Uw-Fv1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="vf8-2z-9TA" secondAttribute="bottom" constant="10" id="3Wb-al-30A"/>
+                    <constraint firstItem="vf8-2z-9TA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="M5B-ow-4rV"/>
+                    <constraint firstItem="ceV-Zk-xC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="PB4-l8-aA8"/>
+                    <constraint firstItem="vf8-2z-9TA" firstAttribute="width" secondItem="ceV-Zk-xC6" secondAttribute="width" id="SNb-Py-6Gw"/>
+                    <constraint firstItem="vf8-2z-9TA" firstAttribute="leading" secondItem="ceV-Zk-xC6" secondAttribute="leading" id="Vmn-O2-hRF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vf8-2z-9TA" secondAttribute="trailing" constant="10" id="ckE-VN-lRS"/>
+                    <constraint firstItem="vf8-2z-9TA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ddM-yL-16Q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ceV-Zk-xC6" secondAttribute="trailing" constant="10" id="lt3-g1-AO8"/>
+                    <constraint firstItem="ceV-Zk-xC6" firstAttribute="bottom" secondItem="vf8-2z-9TA" secondAttribute="bottom" id="pVs-Z9-jZi"/>
+                    <constraint firstItem="ceV-Zk-xC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="rYX-WB-vMh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ceV-Zk-xC6" secondAttribute="bottom" constant="10" id="tr1-DE-7Mi"/>
+                    <constraint firstItem="vf8-2z-9TA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="zjR-jE-xUs"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="M5B-ow-4rV"/>
+                        <exclude reference="ckE-VN-lRS"/>
+                        <exclude reference="PB4-l8-aA8"/>
+                        <exclude reference="lt3-g1-AO8"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pictureImageView" destination="vf8-2z-9TA" id="Hjb-Pl-uaT"/>
+                <outlet property="titleLabel" destination="ceV-Zk-xC6" id="6t7-iM-CiQ"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="276.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fengkaung.png" width="480" height="427"/>
+    </resources>
+</document>

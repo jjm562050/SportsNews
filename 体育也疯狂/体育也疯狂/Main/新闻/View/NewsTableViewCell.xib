@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newscell" rowHeight="115" id="Yea-h5-xr1" customClass="NewsTableViewCell">
+            <rect key="frame" x="0.0" y="1" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yea-h5-xr1" id="rQD-qH-khy">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fengkaung.png" translatesAutoresizingMaskIntoConstraints="NO" id="S9a-dR-pGh">
+                        <rect key="frame" x="13" y="13" width="91" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="91" id="Drs-Jq-RWd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="som-DI-SLa">
+                        <rect key="frame" x="109" y="13" width="198" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Pby-gj-3jN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJD-Tk-lYq">
+                        <rect key="frame" x="109" y="86" width="190" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="dBo-bO-0aq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="som-DI-SLa" firstAttribute="leading" secondItem="eJD-Tk-lYq" secondAttribute="leading" id="1OM-61-nCW"/>
+                    <constraint firstItem="S9a-dR-pGh" firstAttribute="top" secondItem="rQD-qH-khy" secondAttribute="topMargin" constant="5" id="8eL-xj-zkI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eJD-Tk-lYq" secondAttribute="bottom" constant="5" id="F9H-Bm-IkE"/>
+                    <constraint firstItem="som-DI-SLa" firstAttribute="top" secondItem="rQD-qH-khy" secondAttribute="topMargin" constant="5" id="PnA-E9-k8W"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="som-DI-SLa" secondAttribute="trailing" constant="5" id="SAs-ji-Iw2"/>
+                    <constraint firstItem="som-DI-SLa" firstAttribute="leading" secondItem="S9a-dR-pGh" secondAttribute="trailing" constant="5" id="exT-JB-beQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="S9a-dR-pGh" secondAttribute="bottom" constant="5" id="oXq-i0-YN1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eJD-Tk-lYq" secondAttribute="trailing" constant="13" id="py5-Wj-2XL"/>
+                    <constraint firstItem="S9a-dR-pGh" firstAttribute="leading" secondItem="rQD-qH-khy" secondAttribute="leadingMargin" constant="5" id="sdn-GB-IJU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pictureImageView" destination="S9a-dR-pGh" id="z7t-nT-OV6"/>
+                <outlet property="timeLabel" destination="eJD-Tk-lYq" id="e7q-tY-oOE"/>
+                <outlet property="titleLabel" destination="som-DI-SLa" id="gEI-oG-SxB"/>
+            </connections>
+            <point key="canvasLocation" x="246" y="0.0"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fengkaung.png" width="480" height="427"/>
+    </resources>
+</document>
